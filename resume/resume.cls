@@ -72,12 +72,18 @@
 }
 
 \newcommand{\contactInfo}[3]{
-  \centerline{\sffamily\large{\faEnvelope\ {#1} \textperiodcentered\ \faPhone\ {#2}}
+  \centerline{\sffamily\large{\faBook\ {#1}  \textperiodcentered\ \faLocationArrow\ {#2} }
     \ifthenelse{\isempty{#3}}%
       { } % if {#3} is empty
       {\textperiodcentered\ \faBirthdayCake\ {#3} } % homepage, no space before \text...
   }
   \vspace{1.5ex}
+}
+
+\newcommand{\otherInfo}[2]{
+  \centerline{\sffamily\large{\faEnvelope\ {#1} \textperiodcentered\ \faPhone\ {#2}}}
+  \vspace{1.5ex}
+
 }
 
 \newcommand{\role}[2]{
